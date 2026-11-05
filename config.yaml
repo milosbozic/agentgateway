@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://agentgateway.dev/schema/config
+config:
+  storage:
+    mode: hybrid
+  database:
+    url: ${DATABASE_URL}
+gateways:
+  default:
+    port: 4000
+ui:
+  gateways: default
+  policies:
+    basicAuth:
+      mode: strict
+      htpasswd: ${UI_HTPASSWD}
+      realm: agentgateway
+llm:
+  providers: []
+  models: []
+  virtualModels: []
+mcp:
+  targets: []

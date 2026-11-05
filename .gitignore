@@ -1,0 +1,29 @@
+# Secrets: config.yaml reads DATABASE_URL and UI_HTPASSWD from the environment
+.env
+.env.*
+!.env.example
+*.htpasswd
+htpasswd
+secrets/
+
+# Local data / databases
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Logs
+*.log
+logs/
+
+# Local overrides
+config.local.yaml
+docker-compose.override.yml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
