@@ -34,3 +34,7 @@ mcp:
         metadata:
           name: bootstrap
   targets: []
+  frontendPolicies:
+  accessLog:
+    database:
+      llm: full
